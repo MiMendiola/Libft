@@ -6,11 +6,12 @@
 /*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/25 16:38:53 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/09/21 17:39:42 by mmendiol         ###   ########.fr       */
+/*   Updated: 2023/09/24 23:01:40 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+#include <ft_strlen.c>
 
 int	ft_strlen(char *str)
 {

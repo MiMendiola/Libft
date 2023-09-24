@@ -3,52 +3,42 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmendiol <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/25 12:59:55 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/07/25 13:33:44 by mmendiol         ###   ########.fr       */
+/*   Created: 2023/09/24 19:10:03 by mmendiol          #+#    #+#             */
+/*   Updated: 2023/09/24 21:39:23 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-int	ft_strlen(char *src)
+char	*ft_strdup(const char *s)
 {
-	int	i;
-
-	i = 0;
-	while (src[i])
-	{
-		i++;
-	}
-	return (i);
-}
-
-char	*ft_strdup(char *src)
-{
-	char	*nstr;
+	char	*dst;
 	int		i;
 
 	i = 0;
-	nstr = (char *)malloc((ft_strlen(src) + 1) * sizeof(char));
-	if (!nstr)
+	dst = ft_calloc(ft_strlen(s) + 1, sizeof(char));
+	if (!dst)
+		return (0);
+	while (s[i])
 	{
-		return ((void *)0);
-	}
-	while (src[i])
-	{
-		nstr[i] = src[i];
+		dst[i] = s[i];
 		i++;
 	}
-	nstr[i] = '\0';
-	return (nstr);
+	dst[i] = '\0';
+	return (dst);
 }
 /*
 #include <stdio.h>
+
 int	main(void)
 {
-	char	*src = "hola mundo";
+	char	*src;
 
-	printf("%s", ft_strdup(src));
+	src = "";
+	printf("Mio: %s\n", ft_strdup(src));
+	printf("Ori: %s", strdup(src));
 	return (0);
-}*/
+}
+*/

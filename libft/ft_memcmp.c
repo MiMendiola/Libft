@@ -1,48 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/17 18:28:59 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/09/21 17:40:46 by mmendiol         ###   ########.fr       */
+/*   Created: 2023/09/22 16:15:12 by mmendiol          #+#    #+#             */
+/*   Updated: 2023/09/24 19:25:43 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+#include "libft.h"
+
+int	ft_memcmp(const void *s1, const void *s2, size_t len)
 {
-	int	i;
-	int	j;
+	size_t			i;
+	unsigned char	*a;
+	unsigned char	*b;
 
 	i = 0;
-	j = 0;
-	if (to_find[0] == '\0')
-		return (str);
-	while (str[i])
+	a = (unsigned char *)s1;
+	b = (unsigned char *)s2;
+	while (i < len)
 	{
-		j = 0;
-		while (str[i + j] == to_find[j])
-		{
-			if (to_find[j + 1] == '\0')
-				return (str + i);
-			j++;
-		}
+		if (a[i] != b[i])
+			return (a[i] - b[i]);
 		i++;
 	}
 	return (0);
 }
 /*
-#include <stdio.h>
-#include <string.h>
-
 int	main(void)
 {
-	char	str[] = "Hloa buenos pat dias, que patata tal estas";
-	char	find[] = "patata";
+	void	*a;
+	void	*b;
 
-	printf("Mia: %s\n", ft_strstr(str, find));
-	printf("Original: %s", strstr(str, find));
+	a = "t2";
+	b = "t0";
+	printf("Mio: %d\n", ft_memcmp(a,b,6));
+	printf("Ori: %d", memcmp(a,b,6));
 	return (0);
 }
 */

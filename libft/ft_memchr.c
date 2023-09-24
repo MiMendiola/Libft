@@ -1,42 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 20:33:25 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/09/24 19:25:22 by mmendiol         ###   ########.fr       */
+/*   Created: 2023/09/22 12:07:36 by mmendiol          #+#    #+#             */
+/*   Updated: 2023/09/24 19:25:53 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	*ft_memchr(const void *s, int c, size_t len)
 {
-	size_t			i;
+	unsigned int	i;
 	unsigned char	character;
+	unsigned char	*str;
 
 	i = 0;
+	str = (unsigned char *)s;
 	character = (unsigned char)c;
-	if (character == '\0')
-		return ((char *)&s[ft_strlen(s)]);
-	while (s[i])
+	while (len > i)
 	{
-		if (s[i] == character)
-			return ((char *)(i + s));
+		if (str[i] == character)
+			return (i + (void *)s);
 		i++;
 	}
 	return (0);
 }
-
 /*
 int	main(void)
 {
-	const char	p[];
+	char	s[];
 
-	p[] = "Hola Mundo";
-	printf("Funcion: %s", ft_strchr(p, 'a'));
+	s[] = "Hola Mundo";
+	printf("MIO: %s\n", ft_memchr(s, 'o', 4));
+	printf("ORI: %s", memchr(s, 'o', 4));
 	return (0);
 }
 */
