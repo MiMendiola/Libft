@@ -1,42 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 20:33:25 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/09/26 13:02:09 by mmendiol         ###   ########.fr       */
+/*   Created: 2023/09/27 17:54:38 by mmendiol          #+#    #+#             */
+/*   Updated: 2023/09/27 19:26:51 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int	counter_nbr(int n)
 {
-	size_t			i;
-	unsigned char	character;
+	int	i;
 
 	i = 0;
-	character = (unsigned char)c;
-	if (character == '\0')
-		return ((char *)&s[ft_strlen(s)]);
-	while (s[i])
+	while (n)
 	{
-		if (s[i] == character)
-			return ((char *)(i + s));
+		n /= 10;
 		i++;
 	}
-	return (NULL);
+	return (i);
 }
 
-/*
-int	main(void)
+int	take_nbr(unsigned int n, char *res, int len)
 {
-	const char	p[];
+	int	i;
 
-	p[] = "Hola Mundo";
-	printf("Funcion: %s", ft_strchr(p, 'a'));
-	return (0);
+	i = 0;
+	while (len--)
+	{
+		n /= 10;
+		res[i] = n + '0';
+		i++;
+	}
 }
-*/
+
+char	*ft_itoa(int n)
+{
+}

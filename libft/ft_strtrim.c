@@ -1,42 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 20:33:25 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/09/26 13:02:09 by mmendiol         ###   ########.fr       */
+/*   Created: 2023/09/25 13:02:13 by mmendiol          #+#    #+#             */
+/*   Updated: 2023/09/25 21:35:29 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t			i;
-	unsigned char	character;
+	int	i;
+	int	j;
 
+	if (!s1)
+		return (NULL);
 	i = 0;
-	character = (unsigned char)c;
-	if (character == '\0')
-		return ((char *)&s[ft_strlen(s)]);
-	while (s[i])
-	{
-		if (s[i] == character)
-			return ((char *)(i + s));
+	j = ft_strlen(s1);
+	while (s1[i] && ft_strchr(set, s1[i]))
 		i++;
-	}
-	return (NULL);
+	while (j > 0 && ft_strchr(set, s1[j]))
+		j--;
+	if (i > j)
+		return (ft_strdup(""));
+	else
+		return (ft_substr(s1, i, j - i + 1));
 }
-
 /*
 int	main(void)
 {
-	const char	p[];
+	char s[] = "xxxxxxxxxxxxxx";
 
-	p[] = "Hola Mundo";
-	printf("Funcion: %s", ft_strchr(p, 'a'));
+	printf("%s\n", ft_strtrim(s, "x"));
+	free(s);
 	return (0);
-}
-*/
+}*/

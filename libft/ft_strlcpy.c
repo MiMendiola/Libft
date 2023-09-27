@@ -6,7 +6,7 @@
 /*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 11:35:26 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/09/21 22:09:17 by mmendiol         ###   ########.fr       */
+/*   Updated: 2023/09/25 21:37:53 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 	size_t	i;
 	size_t	len;
 
-	if (src == NULL)
-		return (0);
 	i = 0;
 	len = ft_strlen(src);
 	if (dstsize > 0)

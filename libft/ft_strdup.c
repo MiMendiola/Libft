@@ -6,7 +6,7 @@
 /*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/24 19:10:03 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/09/24 21:39:23 by mmendiol         ###   ########.fr       */
+/*   Updated: 2023/09/26 13:02:16 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *s)
 	i = 0;
 	dst = ft_calloc(ft_strlen(s) + 1, sizeof(char));
 	if (!dst)
-		return (0);
+		return (NULL);
 	while (s[i])
 	{
 		dst[i] = s[i];

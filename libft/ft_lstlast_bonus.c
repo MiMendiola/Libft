@@ -1,42 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 20:33:25 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/09/26 13:02:09 by mmendiol         ###   ########.fr       */
+/*   Created: 2023/09/27 19:26:11 by mmendiol          #+#    #+#             */
+/*   Updated: 2023/09/27 19:50:39 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+t_list	*ft_lstlast(t_list *lst)
 {
-	size_t			i;
-	unsigned char	character;
-
-	i = 0;
-	character = (unsigned char)c;
-	if (character == '\0')
-		return ((char *)&s[ft_strlen(s)]);
-	while (s[i])
-	{
-		if (s[i] == character)
-			return ((char *)(i + s));
-		i++;
-	}
-	return (NULL);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }
-
-/*
-int	main(void)
-{
-	const char	p[];
-
-	p[] = "Hola Mundo";
-	printf("Funcion: %s", ft_strchr(p, 'a'));
-	return (0);
-}
-*/
