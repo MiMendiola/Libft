@@ -6,7 +6,7 @@
 /*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 13:15:54 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/09/27 18:18:18 by mmendiol         ###   ########.fr       */
+/*   Updated: 2023/09/28 19:44:04 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,10 @@ static void	free_str(char **str)
 		free(str[i]);
 		i++;
 	}
-	free(str[i]);
+	free(str);
 }
 
-static void write_str(char **r, char *str, char c)
+static int	write_str(char **r, char *str, char c)
 {
 	int	i;
 	int	j;
@@ -68,11 +68,12 @@ static void write_str(char **r, char *str, char c)
 				j++;
 			r[words] = ft_substr(str, i, j);
 			if (r[words] == NULL)
-				free_str(r);
+				return (free_str(r), 0);
 			i += j;
 			words++;
 		}
 	}
+	return (1);
 }
 
 char	**ft_split(char const *s, char c)
@@ -80,13 +81,14 @@ char	**ft_split(char const *s, char c)
 	int		words;
 	char	**res;
 
-	words = cont_words((char *)s, c);
 	if (!s)
 		return (NULL);
+	words = cont_words((char *)s, c);
 	res = ft_calloc(words + 1, sizeof(char *));
 	if (!res)
 		return (NULL);
-	write_str(res, (char *)s, c);
+	if (!write_str(res, (char *)s, c))
+		return (NULL);
 	return (res);
 }
 
@@ -109,11 +111,11 @@ int	main(void)
 
 	// free(split); // Liberamos la memoria asignada
 	//printf("%d", cont_words(str, '-'));
-	char *str = "  Hola Mundooooo        333  234234   ----++++ 42";
+	char *str = "hello!zzzzzzzz";
 	char **res;
 	int	i = 0;
 
-	res = ft_split(str, ' ');
+	res = ft_split(str, 'z');
 	while (res[i])
 	{
 		printf("%s\n", res[i]);
