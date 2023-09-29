@@ -6,7 +6,7 @@
 /*   By: mmendiol <mmendiol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 19:43:33 by mmendiol          #+#    #+#             */
-/*   Updated: 2023/09/28 22:13:52 by mmendiol         ###   ########.fr       */
+/*   Updated: 2023/09/29 19:39:17 by mmendiol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,12 @@ char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s1, char const *set);
 char				**ft_split(char const *s, char c);
 char				*ft_itoa(int n);
+char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void				ft_striteri(char *s, void (*f)(unsigned int, char *));
+void				ft_putchar_fd(char c, int fd);
+void				ft_putstr_fd(char *s, int fd);
+void				ft_putendl_fd(char *s, int fd);
+void				ft_putnbr_fd(int nb, int fd);
 
 // BONUS
 typedef struct s_list
