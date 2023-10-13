@@ -4,11 +4,11 @@
 
 El objetivo de este proyecto es crear nuestra propia libreria: un conjunto de funciones que sera una herramienta muy utill a lo largo del cursus a la cual se le prodra ir añadiendo a lo largo del tiempo mas y mas funciones.
 
-[OBLIGATORIAS](LIBFT%205cefede71f324981b2ab9499f9890a20/OBLIGATORIAS%209a026895953d4693ae1aa897a645ee3a.md)
+[OBLIGATORIAS](./Documentation/OBLIGATORIAS.md)
 
-[ADICIONALES](LIBFT%205cefede71f324981b2ab9499f9890a20/ADICIONALES%20966c1430047e4d74b56fb54d532c43c3.md)
+[ADICIONALES](./Documentation/ADICIONALES.md)
 
-[BONUS](LIBFT%205cefede71f324981b2ab9499f9890a20/BONUS%204fce27547e4a4dea9f83b5e2b4160054.md)
+[BONUS](./Documentation/BONUS.md)
 
 Al terminar este proyecto note el recordatorio de la piscina y como empeze a tocar cosas nuevas como por ejemplo las struct/listas y como funcionar basicamente con ellas.
 
