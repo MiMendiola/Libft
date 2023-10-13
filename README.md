@@ -1,7 +1,5 @@
 # LIBFT
 
----
-
 El objetivo de este proyecto es crear nuestra propia libreria: un conjunto de funciones que sera una herramienta muy utill a lo largo del cursus a la cual se le prodra ir añadiendo a lo largo del tiempo mas y mas funciones.
 
 [OBLIGATORIAS](./Documentation/OBLIGATORIAS/OBLIGATORIAS.md)
