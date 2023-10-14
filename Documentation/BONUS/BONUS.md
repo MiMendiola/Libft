@@ -19,20 +19,7 @@ void *: permite guardar cualquier tipo de información.
     • next: la dirección del siguiente nodo, o NULL si el siguiente nodo es el último.
 En tu Makefile, añade una regla make bonus que incorpore las funciones bonus a tu libft.a.
 
-[FT_LSTNEW](./FT_LSTNEW.md)
-
-[FT_LSTADD_FRONT](./FT_LSTADD_FRONT.md)
-
-[FT_LSTSIZE](./FT_LSTSIZE.md)
-
-[FT_LSTLAST](./FT_LSTLAST.md)
-
-[FT_LSTADD_BACK](./FT_LSTADD_BACK.md)
-
-[FT_LSTDELONE](./FT_LSTDELONE.md)
-
-[FT_LSTCLEAR](./FT_LSTCLEAR.md)
-
-[FT_LSTITER](./FT_LSTITER.md)
-
-[FT_LSTMAP](./FT_LSTMAP.md)
+|[FT_LSTNEW](./FT_LSTNEW.md)|[FT_LSTADD_FRONT](./FT_LSTADD_FRONT.md)|[FT_LSTSIZE](./FT_LSTSIZE.md)
+|---|---|---|
+|[FT_LSTLAST](./FT_LSTLAST.md)|[FT_LSTADD_BACK](./FT_LSTADD_BACK.md)|[FT_LSTDELONE](./FT_LSTDELONE.md)|
+|[FT_LSTCLEAR](./FT_LSTCLEAR.md)|[FT_LSTITER](./FT_LSTITER.md)|[FT_LSTMAP](./FT_LSTMAP.md)|
