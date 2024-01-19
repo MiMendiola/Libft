@@ -1,50 +1,51 @@
 # LIBFT
 
-![Proyecto](https://img.shields.io/badge/Libft-Project-blue)
-![Licencia](https://img.shields.io/badge/Licencia-MIT-orange)
-![Versión](https://img.shields.io/badge/Versión-1.0-green)
+![Project](https://img.shields.io/badge/Project-Libft-blue)
+![Licence](https://img.shields.io/badge/Licence-MIT-orange)
+[![Idioma](https://img.shields.io/badge/Idioma-Español-purple)](https://github.com/MiMendiola/Libft/tree/main/Documentation/es/README.md)
+![Version](https://img.shields.io/badge/Version-1.0-green)
 
-El objetivo de este proyecto es crear nuestra propia libreria y afianzar nuestros conocimietos basicos de C, asi como:
-- Funciones basicas
-- Memoria dinamica
+The objective of this project is to create our own library and strengthen our basic C knowledge, including:
+- Basic functions
+- Dynamic memory
 - Makefiles
-- Librerias
-- Struct y listas enlazadas
-    
-Son un conjunto de funciones que sera una herramienta muy utill a lo largo del cursus a la cual se le prodra ir añadiendo a lo largo del tiempo mas y mas funciones.
+- Libraries
+- Struct and linked lists
 
-Un makefile establece reglas de compilacion y reduce algunas flags y debe contener obligatoriamente las reglas:
+These are a set of functions that will be a very useful tool throughout the course, to which more and more functions can be added over time.
+
+A makefile establishes compilation rules, reduces some flags, and must contain the rules:
 - $(NAME)
 - all
 - clean
 - fclean
 
-Este no debera hacer `relink`, esto quiere decir que dos llamadas sucesivas de make no debe suponer otro mensaje que no sea que no queda nada por hacer.
+It should not `relink`, meaning that two successive calls to make should not result in any message other than stating that there is nothing left to do.
 
-Al terminar este proyecto note el recordatorio de la piscina y como empeze a tocar cosas nuevas como por ejemplo las struct/listas y como funcionar basicamente con ellas.
+Upon completing this project, I noticed the reminder of the pool and how I started exploring new things, such as structs/lists and how to work with them.
 
 ---
 
-## Tabla de Contenidos
+## Table of Contents
 
-[OBLIGATORIAS](./Documentation/OBLIGATORIAS/OBLIGATORIAS.md)
+[MANDATORY](./Documentation/MANDATORY/MANDATORY.md)
 
-[ADICIONALES](./Documentation/ADICIONALES/ADICIONALES.md)
+[ADDITIONAL](./Documentation/ADDITIONAL/ADDITIONAL.md)
 
 [BONUS](./Documentation/BONUS/BONUS.md)
 
 ---
 
-## Recomendaciones
+## Recommendations
 
-El tiempo recomendable en el que puedes realizar este proyecto va desde la semana hasta los 2 meses siendo 1 mes la media.
-No intentes acelerar demasiado, lo mejor es ir cada uno a su ritmo y coger un `habito` y `aprender`.
-Si te atascas en alguna funcion es recomendable `pasar a la siguiente` y volver mas tarde.
-Hacer el `bonus es muy recomendable`, ya que lo necesitaras y lo utilizaras mas adelante.
+The recommended time frame for completing this project ranges from one week to two months, with one month being the average. 
+Do not try to rush too much, it's best to go at your own pace, develop a `habit`, and `learn`.
+If you get stuck on a function, it's advisable to `move on to the next one` and come back later. 
+Doing the bonus is highly recommended, as you will need and use it later.
 
-## Contacto
+## Contact
 
-Si tienes alguna pregunta, sugerencia o comentario sobre LIBFT, no dudes en ponerte en contacto conmigo:
+If you have any questions, suggestions, or comments about LIBFT, feel free to contact me:
 
-- Correo Electrónico: <a href="mailto:mglmendiol@gmail.com" style="text-decoration: none; color:#fff">mglmendiol@gmail.com</a>
+- Email: <a href="mailto:mglmendiol@gmail.com" style="text-decoration: none; color:#fff">mglmendiol@gmail.com</a>
 - LinkedIn: <a href="https://www.linkedin.com/in/mimendiola/" style="text-decoration: none; color:#fff !important;">https://www.linkedin.com/in/mimendiola/</a>
