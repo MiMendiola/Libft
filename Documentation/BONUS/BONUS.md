@@ -1,9 +1,9 @@
 # BONUS
 
-Si completas la parte obligatoria, no dudes en llevarla más lejos haciendo esta parte extra. Te dará puntos adicionales si la completas correctamente.
-Las funciones para manipular memoria y strings son muy útiles... Pero pronto descubrirás que la manipulación de listas lo es incluso más.
+If you complete the mandatory part, feel free to take it a step further by doing this extra section. You will earn `additional points` if you complete it correctly. 
+Functions for manipulating memory and strings are very useful, but soon you'll discover that manipulating lists is even more so.
 
-Deberás utilizar la siguiente estructura para representar un nodo de tu lista. Añade la declaración a tu archivo libft.h:
+You should use the following structure to represent a node in your list. Add the declaration to your libft.h file:
 
 ```c
 typedef struct s_list
@@ -13,11 +13,11 @@ typedef struct s_list
 } t_list;
 ```
 
-Los miembros de la estructura t_list son:
-    • content: la información contenida por el nodo.
-void *: permite guardar cualquier tipo de información.
-    • next: la dirección del siguiente nodo, o NULL si el siguiente nodo es el último.
-En tu Makefile, añade una regla make bonus que incorpore las funciones bonus a tu libft.a.
+The members of the t_list structure are:
+- content: the information contained by the node.
+- void *: allows storing any type of information.
+- next: the address of the next node, or NULL if the next node is the last one.
+In your Makefile, add a rule `make bonus` that incorporates the bonus functions into your libft.a.
 
 |[FT_LSTNEW](./FT_LSTNEW.md)|[FT_LSTADD_FRONT](./FT_LSTADD_FRONT.md)|[FT_LSTSIZE](./FT_LSTSIZE.md)
 |---|---|---|
