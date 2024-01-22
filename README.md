@@ -2,7 +2,7 @@
 
 ![Project](https://img.shields.io/badge/Project-Libft-blue)
 ![Licence](https://img.shields.io/badge/Licence-MIT-orange)
-[![Change_Language](https://img.shields.io/badge/Change_Language-Español-purple)](https://github.com/MiMendiola/Libft/tree/main/Documentation/es/README.md)
+[![Cambiar_Idioma](https://img.shields.io/badge/Cambiar_Idioma-Español-purple)](https://github.com/MiMendiola/Libft/tree/main/Documentation/es/README.md)
 ![Version](https://img.shields.io/badge/Version-1.0-green)
 
 The objective of this project is to create our own library and strengthen our basic C knowledge, including:
