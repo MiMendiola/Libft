@@ -2,9 +2,9 @@
 
 <div>
 
-  ![Project](https://img.shields.io/badge/Project-Libft-blue)
-  ![Licence](https://img.shields.io/badge/Licence-MIT-orange)
-  ![Version](https://img.shields.io/badge/Version-1.0-green)
+  ![Projecto](https://img.shields.io/badge/Projecto-Libft-blue)
+  ![Licencia](https://img.shields.io/badge/Licencia-MIT-orange)
+  ![Versión](https://img.shields.io/badge/Versión-1.0-green)
   <a href="https://github.com/MiMendiola/Libft/tree/main#libft" >
     <img src="https://img.shields.io/badge/Change_Language-English-purple" align="right">
   </a>
