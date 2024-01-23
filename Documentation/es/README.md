@@ -1,9 +1,15 @@
 # LIBFT
 
-![Proyecto](https://img.shields.io/badge/Proyecto-Libft-blue)
-![Licencia](https://img.shields.io/badge/Licencia-MIT-orange)
-[![Change_Language](https://img.shields.io/badge/Change_Language-English-purple)](https://github.com/MiMendiola/Libft/tree/main#libft)
-![Versión](https://img.shields.io/badge/Versión-1.0-green)
+<div>
+
+  ![Project](https://img.shields.io/badge/Project-Libft-blue)
+  ![Licence](https://img.shields.io/badge/Licence-MIT-orange)
+  ![Version](https://img.shields.io/badge/Version-1.0-green)
+  <a href="https://github.com/MiMendiola/Libft/tree/main#libft" >
+    <img src="https://img.shields.io/badge/Change_Language-English-purple" align="right">
+  </a>
+
+</div>
 
 El objetivo de este proyecto es crear nuestra propia libreria y afianzar nuestros conocimietos basicos de C, asi como:
 - Funciones basicas
